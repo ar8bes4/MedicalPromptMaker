@@ -1,16 +1,20 @@
-# React + Vite
+# 🏥 MedicalPromptMaker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+患者説明文書や学術資料を生成するための、高度な構造化プロンプト作成ツールです。
 
-Currently, two official plugins are available:
+## 🚀 概要
+医師や医療従事者が、AI（Gemini 等）から「安全で・高品質な」回答を得るためのプロンプトを、GUI 上で簡単に構成できます。診療科、疾患、対象読者のレベル（患者〜専門医）に応じた最適な制約を自動で付与します。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ 主な機能
+- **動的構成**: 診療科（内科・耳鼻科等）と疾患を選択するだけで、専門的なコンテキストを構築。
+- **理解度レベル最適化**: 研修医向けの教育資料から、高齢者向けの分かりやすい説明まで対応。
+- **マルチ出力フォーマット**: A4文書、スライド構成、インフォグラフィック案などの形式を選択可能。
+- **HMR搭載**: Vite + React による快適な開発・プレビュー環境。
 
-## React Compiler
+## 🛠️ 技術スタック
+- **Frontend**: React (Hooks / Functional Components)
+- **Tooling**: Vite (Fast Refresh / HMR)
+- **Logic**: 医療専門知識を構造化した `medicalData.js` による動的生成
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚠️ 免責事項
+本ツールで生成されたプロンプトによる AI の回答は、必ず専門医が内容の正確性を確認してください。本ツールは意思決定の支援を目的としており、診断を代替するものではありません。
